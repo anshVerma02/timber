@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhagwati Wood Industries</title>
+    <link rel="icon" type="image/x-icon" href="./images/icon.svg">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGreen: {
+                            light: '#4B6B50',
+                            DEFAULT: '#273F25',
+                            dark: '#152215',
+                        },
+                        brandBeige: {
+                            light: '#FFF6E5',
+                            DEFAULT: '#F0DEBA',
+                            dark: '#D9C298',
+                        },
+                        brandBrown: {
+                            light: '#6C5C3A',
+                            DEFAULT: '#3E321A',
+                            dark: '#1F180C',
+                        },
+                    },
+                    fontFamily: {
+                        heading: ["'Abril Fatface'", "serif"],
+                        body: ["'Hanken Grotesk'", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hanken+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="./index.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+   </head>
+
+<body>
+      
+    <div class="content">
+
+        <div class="nav">
+            <nav class="fixed top-0 w-full z-50 bg-transparent" data-aos="fade-down" data-aos-duration="1000" >
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between h-16">
+            
+                        <!-- Logo -->
+                        <div class="flex-shrink-0">
+                            <a href="./index.html" class="flex items-center space-x-2">
+                                <img src="./images/logo.png" alt="MyBrand Logo" class="h-20 w-auto rounded-full p-3" />
+                            </a>
+                        </div>
+
+            
+                        <!-- Desktop Menu -->
+                        <div class="hidden md:flex space-x-6">
+                            <a href="./index.html" class="text-brandGreen hover:text-brandBeige font-body">Home</a>
+                            <a href="./about.html" class="text-brandGreen hover:text-brandBeige font-body">About</a>
+                            <a href="./products.html" class="text-brandGreen hover:text-brandBeige font-body">Products</a>
+                            <a href="./form.html" class="text-brandGreen hover:text-brandBeige font-body">Contact</a>
+                        </div>
+            
+                        <!-- Mobile Menu Button -->
+                        <div class="md:hidden">
+                            <button id="mobile-menu-btn" class="text-brandGreen focus:outline-none">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden bg-brandGreen/80" data-aos="fade-down">
+                    <a href="./index.html" class="block px-4 py-2 text-brandBeige hover:text-brandBeige/80">Home</a>
+                    <a href="./about.html" class="block px-4 py-2 text-brandBeige hover:text-brandBeige/80">About</a>
+                    <a href="./products.html" class="block px-4 py-2 text-brandBeige hover:text-brandBeige/80">Products</a>
+                    <a href="./form.html" class="block px-4 py-2 text-brandBeige hover:text-brandBeige/80">Contact</a>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="hero" >
+
+            <section class="relative h-screen bg-cover bg-center"
+                style="background-image: url('./images/hero-image.png');">
+                
+                <div class="absolute "></div>
+            
+                
+                <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4" data-aos="fade-up" data-aos-duration="2000" >
+                    <h1 class="text-white italic font-heading text-4xl sm:text-5xl md:text-6xl mb-4 ">
+                        PREMIUM TIMBER <span class="text-brandGreen"> SOLUTIONS</span>   
+                    </h1>
+                    <p class="text-brandBeige font-body text-lg sm:text-xl md:text-2xl mb-6 max-w-2xl">
+                        Explore Our Wide Range of Quality Wood Today!
+                    </p>
+                    <a href="./form.html"
+                        class="bg-brandGreen text-brandBeige font-heading px-6 py-3 rounded-md hover:bg-brandGreen/50 transition">
+                        GET QUOTE
+                    </a>
+                </div>
+            </section>
+
+
+        </div>
+
+        <div class="marquee">
+
+            <section class="overflow-hidden bg-brandBeige/30">
+                <div class="whitespace-nowrap animate-marquee py-4">
+                    <span class="inline-block text-brandGreen font-heading text-xl sm:text-2xl px-10">
+                        🌿 BHAGWATI WOOD INDUSTRIES ☆ Teak Wood ☆ Meranti Wood ☆ Pine Wood ☆ Sal Wood ☆ Door Frames ☆ Window Frames ☆ Wooden Planks ☆ Plywoods / Veneer ☆ Mouldings 🌱
+                    </span>
+                    <span class="inline-block text-brandGreen font-heading text-xl sm:text-2xl px-10">
+                        🌿 BHAGWATI WOOD INDUSTRIES ☆ Teak Wood ☆ Meranti Wood ☆ Pine Wood ☆ Sal Wood ☆ Door Frames ☆ Window Frames ☆ Wooden
+                        Planks ☆ Plywoods / Veneer ☆ Mouldings 🌱
+                    </span>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="about" id="about" >
+
+            <section class="bg-brandGreen py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10"  >
+            
+                    
+                    <div class="md:w-1/2 text-center md:text-left" data-aos="flip-left" data-aos-duration="1500" data-aos-once="false">
+                        <h2 class="text-brandBeige font-heading text-3xl sm:text-4xl mb-4 ">About Us</h2>
+                        <p class="text-brandBeige font-body mb-6">
+                            Bhagwati Wood Industries is a proprietor-based firm engaged as a trusted wholesale trader and manufacturer of premium-quality timber products. Over the years, we have established ourselves as a reliable name in the wood industry, catering to a wide range of clients across India with dedication, quality, and service excellence.
+                        </p>
+                        <a href="./about.html"
+                            class="bg-brandBeige text-brandGreen font-heading px-6 py-3 rounded-md hover:bg-brandBeige/90 transition">
+                            Get More Info
+                        </a>
+                    </div>
+            
+                    
+                    <div class="relative md:w-1/2  flex items-center justify-start gap-4 px-2">
+                        <img data-aos="fade-up" data-aos-delay="300" src="./images/teak-wood-logs.jpg"
+                            alt="Wood Industry" class="rounded-lg shadow-lg w-1/2 object-cover ">
+                        <img data-aos="fade-down" data-aos-delay="600" src="./images/about-img-2.jpeg"
+                            alt="Workshop" class="rounded-lg shadow-lg w-1/2 object-cover -translate-y-6">
+                    </div>
+            
+                </div>
+            </section>
+
+
+        </div>
+
+        <div class="products">
+
+            <section class="bg-brandBeige py-16">
+                <div class="max-w-7xl mx-auto px-6">
+            
+                    <!-- First Heading -->
+                    <h2 class="text-3xl font-heading text-brandBrown mb-8 text-center">Our Premium Collection</h2>
+            
+                    <!-- First Row of 3 Images -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
+                        <!-- Image 1 -->
+                        <a href="./products.html" class="relative group overflow-hidden rounded-lg shadow-lg" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <img src="images/sal-wood.jpg" alt="sal-wood"
+                                class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <span class="text-white font-body text-3xl font-bold ">SAL WOOD</span>
+                            </div>
+                        </a>
+            
+                        <!-- Image 2 -->
+                        <a href="./products.html" class="relative group overflow-hidden rounded-lg shadow-lg" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <img src="./images/teak.jpg" alt="teak wood"
+                                class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <span class="text-white font-body text-3xl font-bold">TEAK WOOD</span>
+                            </div>
+                        </a>
+            
+                        <!-- Image 3 -->
+                        <a href="./products.html" class="relative group overflow-hidden rounded-lg shadow-lg" data-aos="fade-up"
+                            data-aos-delay="300">
+                            <img src="./images/MERANTI WOOD.jpg" alt="meranti wood"
+                                class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <span class="text-white font-body text-3xl font-bold">MERANTI WOOD</span>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- Second Heading -->
+                    <h2 class="text-3xl font-heading text-brandBrown mb-8 text-center">Exclusive Designs</h2>
+            
+                    <!-- Second Row of 3 Images -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        <!-- Image 4 -->
+                        <a href="./products.html" class="relative group overflow-hidden rounded-lg shadow-lg" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <img src="./images/moulding.jpg" alt="moulding"
+                                class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <span class="text-white font-body text-3xl font-bold">MOULDINGS</span>
+                            </div>
+                        </a>
+            
+                        <!-- Image 5 -->
+                        <a href="./products.html" class="relative group overflow-hidden rounded-lg shadow-lg" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <img src="./images/planks.jpg" alt="plank"
+                                class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <span class="text-white font-body text-3xl font-bold">WOOD PLANKS</span>
+                            </div>
+                        </a>
+            
+                        <!-- Image 6 -->
+                        <a href="./products.html" class="relative group overflow-hidden rounded-lg shadow-lg" data-aos="fade-up"
+                            data-aos-delay="300">
+                            <img src="./images/door.jpg" alt="door"
+                                class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <span class="text-white font-body text-3xl font-bold">DOOR FRAMES</span>
+                            </div>
+                        </a>
+                    </div>
+            
+                </div>
+            </section>
+
+
+        </div>
+        <div class="cta">
+
+        <section class="relative w-full bg-cover bg-center py-24 px-6 text-center"
+            style="background-image: url('./images/back-cta.jpg');" >
+        
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        
+            <!-- Content -->
+            <div class="relative z-10 max-w-3xl mx-auto" data-aos="fade-down" data-aos-duration="1000">
+                <!-- Heading -->
+                <h2 class="text-4xl md:text-5xl font-heading font-bold text-brandBeige mb-6 drop-shadow-lg" >
+                    Building Trust, Crafting Excellence
+                </h2>
+        
+                <!-- Subtext -->
+                <p class="text-lg md:text-xl font-body text-brandBeige mb-10 opacity-90">
+                   Partner with Bhagwati Wood Industries to shape your projects with premium timber, 
+  unmatched quality, and sustainable craftsmanship.
+                </p>
+        
+                <!-- CTA Button -->
+                <a href="./form.html"
+                    class="inline-block bg-brandBeige text-brandBrown px-10 py-4 rounded-2xl font-semibold shadow-lg hover:bg-brandBrown hover:text-brandBeige transition transform hover:scale-105" data-aos="fade-down" data-aos-delay="500">
+                    Partner With Us
+                </a>
+            </div>
+        </section>
+
+
+        </div>
+
+         <div class="footer">
+            <footer class="bg-brandGreen text-brandBeige py-10 px-6">
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up">
+        
+                    <!-- Brand / About -->
+                    <div>
+                        <a href="./index.html" class="flex items-center space-x-2">
+                            <img src="./images/logo.png" alt="MyBrand Logo" class="h-20 w-auto rounded-full p-3" />
+                        </a>
+                        <p class="text-sm opacity-80 mt-3">
+                            Crafting timeless experiences with creativity, precision, and heart.
+                        </p>
+                    </div>
+        
+                    <!-- Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2 text-sm opacity-90">
+                            <li><a href="./index.html" class="hover:text-white transition">Home</a></li>
+                            <li><a href="./about.html" class="hover:text-white transition">About</a></li>
+                            <li><a href="./products.html" class="hover:text-white transition">Products</a></li>
+                            <li><a href="./form.html" class="hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Contact / Social -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+        
+                        <!-- Address -->
+                        <p class="text-sm mb-2">🏢 Bhagwati Wood Industries</p>
+                        <p class="text-sm mb-2"><a href="https://share.google/DH5X17gG1FefHQTkX">Plot No. 21, P and T Block, Rajdhani Park, Main Assam Timber Market, Mundka, Delhi-110041</a></p>
+        
+                        <!-- Phone -->
+                        <p class="text-sm mb-2">✆ +91-8745013673, +91-9911108659</p>
+        
+                        <!-- Email -->
+                        <p class="text-sm mb-2">📧 bhagwatiwoodindustries79@gmail.com</p>
+        
+                        
+                    </div>
+                </div>
+        
+                <!-- Divider -->
+                <div class="border-t border-brandBeige/30 mt-8 pt-6 text-center text-sm opacity-80">
+                    © <span id="year"></span> Bhagwati Wood Industries. All rights reserved.
+                </div>
+            </footer>
+        
+            <script>
+                // Auto-update copyright year
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+        </div>
+
+    </div>
+
+
+    <a href="https://wa.me/919911108659" target="_blank"
+        class="fixed bottom-6 right-6 bg-white hover:bg-brandGreen text-white rounded-full shadow-lg w-14 h-14 flex items-center justify-center z-50 animate-pulse-custom transition">
+        <!-- WhatsApp SVG Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z" />
+        </svg>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
