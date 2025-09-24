@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhagwati Wood Industries</title>
+    <link rel="icon" type="image/x-icon" href="./images/icon.svg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGreen: {
+                            light: '#4B6B50',
+                            DEFAULT: '#273F25',
+                            dark: '#152215',
+                        },
+                        brandBeige: {
+                            light: '#FFF6E5',
+                            DEFAULT: '#F0DEBA',
+                            dark: '#D9C298',
+                        },
+                        brandBrown: {
+                            light: '#6C5C3A',
+                            DEFAULT: '#3E321A',
+                            dark: '#1F180C',
+                        },
+                    },
+                    fontFamily: {
+                                        heading: ["'Abril Fatface'", "serif"],
+                                        body: ["'Hanken Grotesk'", "sans-serif"],
+                                    },
+                                },
+                            },
+                        };
+                    </script>
+    
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hanken+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body class="bg-cover bg-center min-h-screen flex flex-col justify-between"
+    style="background-image: url('./images/gorm.jpg');" >
+
+    <nav class="fixed top-0 w-full z-50 bg-transparent" data-aos="fade-down" data-aos-duration="1000">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="./index.html" class="flex items-center space-x-2">
+                        <img src="./images/logo.png" alt="MyBrand Logo" class="h-20 w-auto rounded-full p-3" />
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="./index.html" class="text-brandBeige hover:text-brandGreen font-body">Home</a>
+                    <a href="./about.html" class="text-brandBeige hover:text-brandGreen font-body">About</a>
+                    <a href="./products.html" class="text-brandBeige hover:text-brandGreen font-body">Products</a>
+                    <a href="./form.html" class="text-brandBeige hover:text-brandGreen font-body">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-brandBeige focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brandGreen/80" data-aos="fade-down">
+            <a href="./index.html" class="block px-4 py-2 text-brandBeige hover:text-brandBeige/80">Home</a>
+            <a href="./about.html" class="block px-4 py-2 text-brandBeige hover:text-brandBeige/80">About</a>
+            <a href="./products.html" class="block px-4 py-2 text-brandBeige hover:text-brandBeige/80">Products</a>
+            <a href="./form.html" class="block px-4 py-2 text-brandBeige hover:text-brandBeige/80">Contact</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center mt-20 mb-10" >
+        <div class="bg-black bg-opacity-60 p-8 rounded-2xl shadow-lg w-full max-w-2xl mx-4" data-aos="zoom-in"
+            data-aos-duration="1200">
+            <h1 class="font-heading text-3xl md:text-4xl font-bold text-brandBeige text-center mb-6">
+                Send Us Your Requirement
+            </h1>
+
+            <form action="https://api.web3forms.com/submit" method="POST" id="enquiryForm" class="space-y-5">
+                <input type="hidden" name="access_key" value="4342d80f-d161-4d0b-a4bd-e2c179444a68">
+
+                <div data-aos="fade-up" data-aos-delay="100" >
+                    <label class="text-white font-semibold">Your Name *</label>
+                    <input type="text" name="name" placeholder="Enter your name"
+                        class="w-full p-3 rounded-md bg-white/80 focus:outline-none focus:ring-2 focus:ring-brandBeige"
+                        required>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200" >
+                    <label class="text-white font-semibold">Your Email Address *</label>
+                    <input type="email" name="email" placeholder="Enter your email"
+                        class="w-full p-3 rounded-md bg-white/80 focus:outline-none focus:ring-2 focus:ring-brandBeige"
+                        required>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="300" >
+                    <label class="text-white font-semibold">Your Phone Number</label>
+                    <input type="text" name="phone" placeholder="Enter 10-digit number"
+                        class="w-full p-3 rounded-md bg-white/80 focus:outline-none focus:ring-2 focus:ring-brandBeige">
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="400" >
+                    <label class="text-white font-semibold">Your Requirement *</label>
+                    <input type="text" name="requirement" placeholder="Example: Doors, Frames, Planks"
+                        class="w-full p-3 rounded-md bg-white/80 focus:outline-none focus:ring-2 focus:ring-brandBeige"
+                        required>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="500" >
+                    <label class="text-white font-semibold">Size *</label>
+                    <input type="text" name="size" placeholder="Enter the size you require"
+                        class="w-full p-3 rounded-md bg-white/80 focus:outline-none focus:ring-2 focus:ring-brandBeige"
+                        required>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="600" >
+                    <label class="text-white font-semibold">Quantity *</label>
+                    <input type="text" name="quantity" placeholder="Enter the quantity required"
+                        class="w-full p-3 rounded-md bg-white/80 focus:outline-none focus:ring-2 focus:ring-brandBeige"
+                        required>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="700" >
+                    <label class="text-white font-semibold">Wood Options *</label>
+                    <select name="wood"
+                        class="w-full p-3 rounded-md bg-white/80 focus:outline-none focus:ring-2 focus:ring-brandBeige"
+                        required>
+                        <option value="">Select wood type</option>
+                        <option>Teak Wood</option>
+                        <option>Meranti Wood</option>
+                        <option>Sal Wood</option>
+                        <option>White Ash</option>
+                        <option>Jungle Wood</option>
+                        <option>Hard Wood</option>
+                        <option>Maple Wood</option>
+                        <option>European Wood</option>
+                        <option>Pine Wood</option>
+                    </select>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="800" >
+                    <label class="text-white font-semibold">Any Other Specifications</label>
+                    <textarea name="other" placeholder="Write additional details here..."
+                        class="w-full p-3 rounded-md bg-white/80 focus:outline-none focus:ring-2 focus:ring-brandBeige"></textarea>
+                </div>
+
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="900"  data-aos-once="true">
+                    <button type="submit"
+                        class="bg-brandGreen hover:bg-brandBrown text-brandBeige font-bold py-3 px-8 rounded-full transition">
+                        Submit Enquiry
+                    </button>
+                </div>
+            </form>
+            <div id="formMessage" class="hidden text-center mt-4 p-3 rounded-xl font-semibold"></div>
+        </div>
+    </main>
+
+
+
+
+<div class="footer">
+            <footer class="bg-brandGreen text-brandBeige py-10 px-6">
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up">
+        
+                    <!-- Brand / About -->
+                    <div>
+                        <a href="./index.html" class="flex items-center space-x-2">
+                            <img src="./images/logo.png" alt="MyBrand Logo" class="h-20 w-auto rounded-full p-3" />
+                        </a>
+                        <p class="text-sm opacity-80 mt-3">
+                            Crafting timeless experiences with creativity, precision, and heart.
+                        </p>
+                    </div>
+        
+                    <!-- Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2 text-sm opacity-90">
+                            <li><a href="./index.html" class="hover:text-white transition">Home</a></li>
+                            <li><a href="./about.html" class="hover:text-white transition">About</a></li>
+                            <li><a href="./products.html" class="hover:text-white transition">Products</a></li>
+                            <li><a href="./form.html" class="hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Contact / Social -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+        
+                        <!-- Address -->
+                        <p class="text-sm mb-2">🏢 Bhagwati Wood Industries</p>
+                        <p class="text-sm mb-2"><a href="https://share.google/DH5X17gG1FefHQTkX">Plot No. 21, P and T Block, Rajdhani Park, Main Assam Timber Market, Mundka, Delhi-110041</a></p>
+        
+                        <!-- Phone -->
+                        <p class="text-sm mb-2">✆ +91-8745013673, +91-9911108659</p>
+        
+                        <!-- Email -->
+                        <p class="text-sm mb-2">📧 bhagwatiwoodindustries79@gmail.com</p>
+        
+                        
+                    </div>
+                </div>
+        
+                <!-- Divider -->
+                <div class="border-t border-brandBeige/30 mt-8 pt-6 text-center text-sm opacity-80">
+                    © <span id="year"></span> Bhagwati Wood Industries. All rights reserved.
+                </div>
+            </footer>
+        
+            <script>
+                // Auto-update copyright year
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+        </div>
+
+
+
+</div>
+
+<a href="https://wa.me/919911108659" target="_blank"
+    class="fixed bottom-6 right-6 bg-white hover:bg-brandGreen text-white rounded-full shadow-lg w-14 h-14 flex items-center justify-center z-50 animate-pulse-custom transition">
+    <!-- WhatsApp SVG Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+        <path
+            d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z" />
+    </svg>
+</a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

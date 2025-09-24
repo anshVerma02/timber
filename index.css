@@ -1,0 +1,50 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    display: inline-block;
+    min-width: 200%;
+    animation: marquee 15s linear infinite;
+}
+
+
+@keyframes pulseCustom {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(39, 63, 37, 0.6);
+    }
+
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px 5px rgba(39, 63, 37, 0.4);
+    }
+}
+
+.animate-pulse-custom {
+    animation: pulseCustom 2s infinite;
+}

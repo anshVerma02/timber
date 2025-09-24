@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhagwati Wood Industries</title>
+    <link rel="icon" type="image/x-icon" href="./images/icon.svg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGreen: {
+                            light: '#4B6B50',
+                            DEFAULT: '#273F25',
+                            dark: '#152215',
+                        },
+                        brandBeige: {
+                            light: '#FFF6E5',
+                            DEFAULT: '#F0DEBA',
+                            dark: '#D9C298',
+                        },
+                        brandBrown: {
+                            light: '#6C5C3A',
+                            DEFAULT: '#3E321A',
+                            dark: '#1F180C',
+                        },
+                    },
+                    fontFamily: {
+                        heading: ["'Abril Fatface'", "serif"],
+                        body: ["'Hanken Grotesk'", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hanken+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./index.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+    <div class="about">
+
+        <div class="nav">
+            <nav class="fixed top-0 w-full z-50 bg-transparent" data-aos="fade-down" data-aos-duration="1000">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between h-16">
+        
+                        <!-- Logo -->
+                        <div class="flex-shrink-0">
+                            <a href="./index.html" class="flex items-center space-x-2">
+                                <img src="./images/logo.png" alt="MyBrand Logo" class="h-20 w-auto rounded-full p-3" />
+                            </a>
+                        </div>
+        
+        
+                        <!-- Desktop Menu -->
+                        <div class="hidden md:flex space-x-6">
+                            <a href="./index.html" class="text-brandBeige hover:text-brandGreen font-body">Home</a>
+                            <a href="./about.html" class="text-brandBeige hover:text-brandGreen font-body">About</a>
+                            <a href="./products.html" class="text-brandBeige hover:text-brandGreen font-body">Products</a>
+                            <a href="./form.html" class="text-brandBeige hover:text-brandGreen font-body">Contact</a>
+                        </div>
+        
+                        <!-- Mobile Menu Button -->
+                        <div class="md:hidden">
+                            <button id="mobile-menu-btn" class="text-brandBeige focus:outline-none">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden bg-brandGreen/80" data-aos="fade-down">
+                    <a href="./index.html" class="block px-4 py-2 text-brandBeige hover:text-brandBeige/80">Home</a>
+                    <a href="./about.html" class="block px-4 py-2 text-brandBeige hover:text-brandBeige/80">About</a>
+                    <a href="./products.html" class="block px-4 py-2 text-brandBeige hover:text-brandBeige/80">Products</a>
+                    <a href="./form.html" class="block px-4 py-2 text-brandBeige hover:text-brandBeige/80">Contact</a>
+                </div>
+            </nav>
+        
+        </div>
+
+        <!-- COMPANY OVERVIEW HERO -->
+        <section id="company-overview" class="relative bg-cover bg-center"
+            style="background-image: url('./images/hero-2.jpg');">
+            <!-- overlay for contrast -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[rgba(39,63,37,0.72)] to-[rgba(0,0,0,0.35)] backdrop-blur-sm">
+            </div>
+        
+            <div class="relative z-10 max-w-6xl mx-auto px-6 py-24 md:py-32">
+                <div class="flex flex-col md:flex-row items-center gap-10">
+        
+                    <!-- Left: Text -->
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <!-- trust pill -->
+                        <div class="inline-flex items-center gap-3 bg-brandBeige/10 text-brandBeige px-3 py-1 rounded-full mb-4 text-sm"
+                            data-aos="fade-right" data-aos-duration="800">
+                            <svg class="w-4 h-4 text-brandBeige" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            70% of new customers from referrals
+                        </div>
+        
+                        <!-- Headline -->
+                        <h1 class="font-heading text-brandBeige text-3xl sm:text-4xl md:text-5xl leading-tight mb-4"
+                            data-aos="fade-down" data-aos-duration="1000">
+                            Bhagwati Wood Industries - Premium Indian Timber Since 2017
+                        </h1>
+        
+                        <!-- short value prop -->
+                        <p class="font-body text-brandBeige/95 text-base sm:text-lg md:text-xl max-w-xl mb-6" data-aos="fade-up"
+                            data-aos-delay="200" data-aos-duration="1000">
+                            Trusted suppliers of Teak, Meranti, Sal, Pine and custom-cut wood products - precise sizing,
+                            reliable delivery, and quality treatments for long-lasting results.
+                        </p>
+        
+                        <!-- CTAs -->
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-4" data-aos="zoom-in"
+                            data-aos-delay="400" data-aos-duration="900">
+                            <a href="./products.html"
+                                class="inline-block bg-brandBeige text-brandGreen font-heading px-6 py-3 rounded-md shadow-md hover:scale-[1.02] transition">
+                                Get More Info
+                            </a>
+        
+                            <a href="https://drive.google.com/file/d/1HGQL-LN3CXhfg1dCwHQhyxf460iaxCpg/view?usp=sharing" target="_blank" rel="noopener"
+                                class="inline-block border border-brandBeige text-brandBeige px-5 py-3 rounded-md hover:bg-brandBeige/90 transition">
+                                Download Profile
+                            </a>
+                        </div>
+        
+                        <!-- small trust line -->
+                        <div class="mt-6 text-sm text-brandBeige/80" data-aos="fade-up" data-aos-delay="600">
+                            <strong>On-time delivery • Flexible payments • Nationwide distribution</strong>
+                        </div>
+                    </div>
+        
+                    <!-- Right: quick highlights (image + bullets) -->
+                    <div class="md:w-1/2 flex flex-col gap-4">
+                        <div class="grid grid-cols-2 gap-3">
+                            <img src="./images/teak-wood-logs.jpg" alt="Cut Teak wood" loading="lazy"
+                                class="rounded-lg object-cover h-36 w-full shadow-lg" data-aos="fade-up" data-aos-delay="500">
+                            <img src="./images/about-img-2.jpeg" alt="Wood planks" loading="lazy"
+                                class="rounded-lg object-cover h-36 w-full shadow-lg -translate-y-4 md:translate-y-0"
+                                data-aos="fade-up" data-aos-delay="700">
+                        </div>
+        
+                        <div class="bg-brandBeige/5 p-4 rounded-lg">
+                            <ul class="text-brandBeige font-body text-sm space-y-2" data-aos="fade-left" data-aos-delay="800">
+                                <li><strong>Established:</strong> 2017</li>
+                                <li><strong>Main Offerings:</strong> Teak, Meranti, Sal, Plywood & Mouldings</li>
+                                <li><strong>Network:</strong> Large sourcing & nationwide delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSION & VISION -->
+        <section id="mission-vision" class="bg-brandBeige py-20">
+            <div class="max-w-6xl mx-auto px-6 lg:px-8">
+        
+                <!-- Section heading -->
+                <div class="text-center mb-12" data-aos="fade-down" data-aos-duration="1000">
+                    <h2 class="text-3xl md:text-4xl font-heading text-brandBrown mb-4">
+                        Our Mission & Vision
+                    </h2>
+                    <p class="text-brandBrown/80 font-body max-w-2xl mx-auto">
+                        We are committed to providing premium quality wood with integrity,
+                        ensuring every project we touch reflects durability, trust, and craftsmanship.
+                    </p>
+                </div>
+        
+                <!-- Mission & Vision grid -->
+                <div class="grid md:grid-cols-2 gap-10">
+        
+                    <!-- Mission -->
+                    <div class="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center text-center md:text-left md:items-start"
+                        data-aos="fade-right" data-aos-duration="1000">
+                        <!-- Icon -->
+                        <div class="bg-brandGreen/10 text-brandGreen p-4 rounded-full mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 2L2 7l10 5 10-5-10-5zm0 7v13m-7-7h14" />
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-2xl text-brandGreen mb-4">Our Mission</h3>
+                        <p class="font-body text-brandBrown leading-relaxed">
+                            Our mission is to popularize the use of Indian wood in the
+market. Also, we want to highlight the real value (beautiful
+grains, high density) of Indian wood.
+                        </p>
+                    </div>
+        
+                    <!-- Vision -->
+                    <div class="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center text-center md:text-left md:items-start"
+                        data-aos="fade-left" data-aos-duration="1000">
+                        <!-- Icon -->
+                        <div class="bg-brandGreen/10 text-brandGreen p-4 rounded-full mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-2xl text-brandGreen mb-4">Our Vision</h3>
+                        <p class="font-body text-brandBrown leading-relaxed">
+                            Our vision is to provide a wide range of all Indian woods belonging
+different states of India. Including Teak wood, Sal wood,
+Sheesham wood, Mahogany, Kanju wood, Kail/Pine wood, Mango
+wood, Khair wood, Arjun wood, etc.
+
+                        </p>
+                    </div>
+        
+                </div>
+        
+                <!-- CTA -->
+                <div class="text-center mt-12" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="./products.html"
+                        class="bg-brandGreen text-brandBeige px-6 py-3 rounded-md font-heading hover:bg-brandBrown transition">
+                        Explore Our Products
+                    </a>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- WHAT WE OFFER -->
+        <section id="what-we-offer" class="bg-brandBeige py-20">
+            <div class="max-w-6xl mx-auto px-6 lg:px-8">
+        
+                <!-- Section Heading -->
+                <div class="text-center mb-12" data-aos="fade-down" data-aos-duration="1000">
+                    <h2 class="text-3xl md:text-4xl font-heading text-brandBrown mb-4">
+                        What We Offer
+                    </h2>
+                    <p class="text-brandBrown/80 font-body max-w-2xl mx-auto">
+                        Supplying a wide range of premium timber and wood products, cut and treated with precision to meet every
+                        project’s needs.
+                    </p>
+                </div>
+        
+                <!-- Product Grid -->
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="overflow-hidden">
+                            <img src="./images/teak.jpg" alt="Teak Wood"
+                                class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-heading text-brandGreen mb-2">Teak Wood</h3>
+                            <p class="font-body text-sm text-brandBrown/80">
+                                Known for durability and elegance, perfect for doors, frames, and furniture.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Card 2 -->
+                           
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="overflow-hidden">
+                            <img src="./images/sal-wood.jpg" alt="Sal Wood"
+                                class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-heading text-brandGreen mb-2">Sal Wood</h3>
+                            <p class="font-body text-sm text-brandBrown/80">
+                                Strong and termite-resistant, ideal for structural and heavy-duty use.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Card 4 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden group" data-aos="fade-up" data-aos-delay="400">
+                        <div class="overflow-hidden">
+                            <img src="./images/pine-wood.jpg" alt="Pine Wood"
+                                class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-heading text-brandGreen mb-2">Pine Wood</h3>
+                            <p class="font-body text-sm text-brandBrown/80">
+                                Lightweight and cost-effective, suitable for interiors and paneling.
+                            </p>
+                        </div>
+                    </div>
+        
+                   
+        
+                </div>
+        
+                <!-- CTA -->
+                <div class="text-center mt-12" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="./products.html"
+                        class="bg-brandGreen text-brandBeige px-6 py-3 rounded-md font-heading hover:bg-brandBrown transition">
+                        View All Products
+                    </a>
+                </div>
+        
+            </div>
+        </section>
+        
+        <!-- MANUFACTURING PROCESS -->
+        <section id="manufacturing-process" class="bg-brandGreen py-20">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        
+                <!-- Section Heading -->
+                <div class="text-center mb-16" data-aos="fade-down">
+                    <h2 class="text-3xl md:text-4xl font-heading text-brandBeige mb-4">
+                        Our Manufacturing Process
+                    </h2>
+                    <p class="text-brandBeige/90 font-body max-w-2xl mx-auto">
+                        We follow a structured 11-step process to ensure unmatched precision,
+                        quality, and durability in every wood product we deliver.
+                    </p>
+                </div>
+        
+                <!-- Timeline wrapper -->
+                <div class="relative">
+        
+                    <!-- Center line -->
+                    <div class="absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-1 bg-brandBeige/40"></div>
+        
+                    <!-- Steps -->
+                    <div class="space-y-12 relative z-10">
+        
+                        <!-- Step 1 -->
+                        <div class="flex flex-col md:flex-row items-center md:justify-between relative" data-aos="fade-up">
+                            <!-- Left Card -->
+                            <div class="md:w-5/12 bg-white rounded-xl shadow-lg p-6 relative z-10">
+                                <!-- Number + Title -->
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-brandBeige text-brandGreen font-heading font-bold">
+                                        1
+                                    </div>
+                                    <h3 class="ml-4 text-xl font-heading text-brandGreen"> LOG SAWING </h3>
+                                </div>
+                                <!-- Image -->
+                                <img src="./images/teak-wood-logs.jpg" alt="log sawing"
+                                    class="w-full h-40 object-cover rounded-md mb-4">
+                                <!-- Description -->
+                                <p class="text-brandBrown/80 font-body text-sm">
+                                    Cutting raw logs into workable sections for further processing
+                                </p>
+                            </div>
+        
+                            <!-- Connector Dot -->
+                            <div
+                                class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                                <div class="w-6 h-6 bg-brandBeige rounded-full border-4 border-brandGreen"></div>
+                            </div>
+        
+                            <!-- Spacer -->
+                            <div class="md:w-5/12"></div>
+                        </div>
+        
+                        <!-- Step 2 -->
+                        <div class="flex flex-col md:flex-row items-center md:justify-between relative" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="md:w-5/12"></div>
+                            <div
+                                class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                                <div class="w-6 h-6 bg-brandBeige rounded-full border-4 border-brandGreen"></div>
+                            </div>
+                            <div class="md:w-5/12 bg-white rounded-xl shadow-lg p-6 relative z-10">
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-brandBeige text-brandGreen font-heading font-bold">
+                                        2
+                                    </div>
+                                    <h3 class="ml-4 text-xl font-heading text-brandGreen">SIZE CUTTING</h3>
+                                </div>
+                                <img src="./images/size.jpg" alt="size Cutting"
+                                    class="w-full h-40 object-cover rounded-md mb-4">
+                                <p class="text-brandBrown/80 font-body text-sm">
+                                    Trimming wood into required
+dimensions as per specifications.
+                                </p>
+                            </div>
+                        </div>
+        
+                        
+                            <!--step 3-->
+                        <div class="flex flex-col md:flex-row items-center md:justify-between relative" data-aos="fade-up">
+                            <!-- Left Card -->
+                            <div class="md:w-5/12 bg-white rounded-xl shadow-lg p-6 relative z-10">
+                                <!-- Number + Title -->
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-brandBeige text-brandGreen font-heading font-bold">
+                                        3
+                                    </div>
+                                    <h3 class="ml-4 text-xl font-heading text-brandGreen">SORTING</h3>
+                                </div>
+                                <!-- Image -->
+                                <img src="./images/sorting.jpg" alt="Sorting"
+                                    class="w-full h-40 object-cover rounded-md mb-4">
+                                <!-- Description -->
+                                <p class="text-brandBrown/80 font-body text-sm">
+                                    Organizing cut pieces based on
+size, quality, and intended use.
+
+                                </p>
+                            </div>
+                        
+                            <!-- Connector Dot -->
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                                <div class="w-6 h-6 bg-brandBeige rounded-full border-4 border-brandGreen"></div>
+                            </div>
+                        
+                            <!-- Spacer -->
+                            <div class="md:w-5/12"></div>
+                        </div>
+                        
+                        <!-- Step 4 -->
+                        <div class="flex flex-col md:flex-row items-center md:justify-between relative" data-aos="fade-up" data-aos-delay="200">
+                            <div class="md:w-5/12"></div>
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                                <div class="w-6 h-6 bg-brandBeige rounded-full border-4 border-brandGreen"></div>
+                            </div>
+                            <div class="md:w-5/12 bg-white rounded-xl shadow-lg p-6 relative z-10">
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-brandBeige text-brandGreen font-heading font-bold">
+                                        4
+                                    </div>
+                                    <h3 class="ml-4 text-xl font-heading text-brandGreen"> SEASONING</h3>
+                                </div>
+                                <img src="./images/seasoning.jpg" alt="SEASONING"
+                                    class="w-full h-40 object-cover rounded-md mb-4">
+                                <p class="text-brandBrown/80 font-body text-sm">
+                                    Drying wood to reduce moisture
+content and prevent warping.
+                                </p>
+                            </div>
+                        </div>
+                            <!--step  5-->
+                        <div class="flex flex-col md:flex-row items-center md:justify-between relative" data-aos="fade-up">
+                            <!-- Left Card -->
+                            <div class="md:w-5/12 bg-white rounded-xl shadow-lg p-6 relative z-10">
+                                <!-- Number + Title -->
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-brandBeige text-brandGreen font-heading font-bold">
+                                        5
+                                    </div>
+                                    <h3 class="ml-4 text-xl font-heading text-brandGreen">CHEMICAL TREATMENT</h3>
+                                </div>
+                                <!-- Image -->
+                                <img src="./images/chemical.jpg" alt="chemical treartment"
+                                    class="w-full h-40 object-cover rounded-md mb-4">
+                                <!-- Description -->
+                                <p class="text-brandBrown/80 font-body text-sm">
+                                    Protecting wood from termites and
+other insects.
+                                </p>
+                            </div>
+                        
+                            <!-- Connector Dot -->
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                                <div class="w-6 h-6 bg-brandBeige rounded-full border-4 border-brandGreen"></div>
+                            </div>
+                        
+                            <!-- Spacer -->
+                            <div class="md:w-5/12"></div>
+                        </div>
+                        
+                        <!-- Step 6 -->
+                        <div class="flex flex-col md:flex-row items-center md:justify-between relative" data-aos="fade-up" data-aos-delay="200">
+                            <div class="md:w-5/12"></div>
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                                <div class="w-6 h-6 bg-brandBeige rounded-full border-4 border-brandGreen"></div>
+                            </div>
+                            <div class="md:w-5/12 bg-white rounded-xl shadow-lg p-6 relative z-10">
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-brandBeige text-brandGreen font-heading font-bold">
+                                        6
+                                    </div>
+                                    <h3 class="ml-4 text-xl font-heading text-brandGreen">RIP SAWING</h3>
+                                </div>
+                                <img src="./images/rip-sawing.jpg" alt="Rip Sawing"
+                                    class="w-full h-40 object-cover rounded-md mb-4">
+                                <p class="text-brandBrown/80 font-body text-sm">
+                                    Cutting wood along the grain for
+precision sizing.
+
+                                </p>
+                            </div>
+                        </div>
+                            <!--step 7-->
+                        <div class="flex flex-col md:flex-row items-center md:justify-between relative" data-aos="fade-up">
+                            <!-- Left Card -->
+                            <div class="md:w-5/12 bg-white rounded-xl shadow-lg p-6 relative z-10">
+                                <!-- Number + Title -->
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-brandBeige text-brandGreen font-heading font-bold">
+                                        7
+                                    </div>
+                                    <h3 class="ml-4 text-xl font-heading text-brandGreen">PLANING</h3>
+                                </div>
+                                <!-- Image -->
+                                <img src="./images/planing.jpg" alt="planing"
+                                    class="w-full h-40 object-cover rounded-md mb-4">
+                                <!-- Description -->
+                                <p class="text-brandBrown/80 font-body text-sm">
+                                    Smoothing and leveling the wood
+surface for uniform thickness.
+
+                                </p>
+                            </div>
+                        
+                            <!-- Connector Dot -->
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                                <div class="w-6 h-6 bg-brandBeige rounded-full border-4 border-brandGreen"></div>
+                            </div>
+                        
+                            <!-- Spacer -->
+                            <div class="md:w-5/12"></div>
+                        </div>
+                        
+                        <!-- Step 8 -->
+                        <div class="flex flex-col md:flex-row items-center md:justify-between relative" data-aos="fade-up" data-aos-delay="200">
+                            <div class="md:w-5/12"></div>
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                                <div class="w-6 h-6 bg-brandBeige rounded-full border-4 border-brandGreen"></div>
+                            </div>
+                            <div class="md:w-5/12 bg-white rounded-xl shadow-lg p-6 relative z-10">
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-brandBeige text-brandGreen font-heading font-bold">
+                                        8
+                                    </div>
+                                    <h3 class="ml-4 text-xl font-heading text-brandGreen">FINGER CUTTING</h3>
+                                </div>
+                                <img src="./images/finger-cutting.jpg" alt="finger cutting"
+                                    class="w-full h-40 object-cover rounded-md mb-4">
+                                <p class="text-brandBrown/80 font-body text-sm">
+                                    Creating interlocking cuts to join
+wood pieces securely.
+
+                                </p>
+                            </div>
+                        </div>
+                        <!--step 9-->
+                        <div class="flex flex-col md:flex-row items-center md:justify-between relative" data-aos="fade-up">
+                            <!-- Left Card -->
+                            <div class="md:w-5/12 bg-white rounded-xl shadow-lg p-6 relative z-10">
+                                <!-- Number + Title -->
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-brandBeige text-brandGreen font-heading font-bold">
+                                        9
+                                    </div>
+                                    <h3 class="ml-4 text-xl font-heading text-brandGreen">JOINTING</h3>
+                                </div>
+                                <!-- Image -->
+                                <img src="./images/jointing.jpg" alt="jointing"
+                                    class="w-full h-40 object-cover rounded-md mb-4">
+                                <!-- Description -->
+                                <p class="text-brandBrown/80 font-body text-sm">
+                                    Aligning and attaching finger-cut
+wood pieces together.
+
+                                </p>
+                            </div>
+                        
+                            <!-- Connector Dot -->
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                                <div class="w-6 h-6 bg-brandBeige rounded-full border-4 border-brandGreen"></div>
+                            </div>
+                        
+                            <!-- Spacer -->
+                            <div class="md:w-5/12"></div>
+                        </div>
+                        
+                        <!-- Step 10 -->
+                        <div class="flex flex-col md:flex-row items-center md:justify-between relative" data-aos="fade-up" data-aos-delay="200">
+                            <div class="md:w-5/12"></div>
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                                <div class="w-6 h-6 bg-brandBeige rounded-full border-4 border-brandGreen"></div>
+                            </div>
+                            <div class="md:w-5/12 bg-white rounded-xl shadow-lg p-6 relative z-10">
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-brandBeige text-brandGreen font-heading font-bold">
+                                        10
+                                    </div>
+                                    <h3 class="ml-4 text-xl font-heading text-brandGreen">SANDING</h3>
+                                </div>
+                                <img src="./images/snading.jpg" alt="sanding"
+                                    class="w-full h-40 object-cover rounded-md mb-4">
+                                <p class="text-brandBrown/80 font-body text-sm">
+                                  Finishing the surface by removing
+imperfections for a smooth touch.
+                                </p>
+                            </div>
+                        </div>
+                        <!--step 11-->
+                        <div class="flex flex-col md:flex-row items-center md:justify-between relative" data-aos="fade-up">
+                            <!-- Left Card -->
+                            <div class="md:w-5/12 bg-white rounded-xl shadow-lg p-6 relative z-10">
+                                <!-- Number + Title -->
+                                <div class="flex items-center mb-3">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-brandBeige text-brandGreen font-heading font-bold">
+                                        11
+                                    </div>
+                                    <h3 class="ml-4 text-xl font-heading text-brandGreen">FINAL PRODUCT</h3>
+                                </div>
+                                <!-- Image -->
+                                <img src="./images/final.jpg" alt="final"
+                                    class="w-full h-40 object-cover rounded-md mb-4">
+                                <!-- Description -->
+                                <p class="text-brandBrown/80 font-body text-sm">
+                                  A Wide Range of Ready-to-Ship Timber Products, Crafted for Your Needs.
+                                </p>
+                            </div>
+                        
+                            <!-- Connector Dot -->
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                                <div class="w-6 h-6 bg-brandBeige rounded-full border-4 border-brandGreen"></div>
+                            </div>
+                        
+                            <!-- Spacer -->
+                            <div class="md:w-5/12"></div>
+                        </div>
+                        
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT WE STAND FOR + GENERAL MANAGER -->
+        <section id="values" class="bg-brandBeige py-20">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    
+    <!-- Heading -->
+    <div class="text-center mb-12" data-aos="fade-down">
+      <h2 class="text-3xl md:text-4xl font-heading text-brandBrown mb-4">
+        What We Stand For
+      </h2>
+      <p class="text-brandBrown/80 font-body max-w-2xl mx-auto">
+        We are committed to delivering top-quality services and
+creating lasting partnerships with our clients.
+      </p>
+    </div>
+
+    <!-- Values Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+      
+      <!-- Value 1 -->
+      <div class="bg-white shadow-md rounded-xl p-6 text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-12 h-12 mx-auto mb-4 bg-brandGreen/10 text-brandGreen flex items-center justify-center rounded-full">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l9 4.5-9 4.5L3 6.5 12 2z" />
+          </svg>
+        </div>
+        <h3 class="font-heading text-lg text-brandGreen mb-2">CUSTOMER
+SATISFACTION</h3>
+        <p class="font-body text-sm text-brandBrown/80">70% of our new customers
+come from referrals which
+speaks volumes about our
+service.</p>
+      </div>
+
+      <!-- Value 2 -->
+      <div class="bg-white shadow-md rounded-xl p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-12 h-12 mx-auto mb-4 bg-brandGreen/10 text-brandGreen flex items-center justify-center rounded-full">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 class="font-heading text-lg text-brandGreen mb-2">HUGE DISTRIBUTION
+NETWORK</h3>
+        <p class="font-body text-sm text-brandBrown/80">With our vast network, we
+ensure that your orders are
+efficiently delivered to your
+location, no matter how
+remote.
+</p>
+      </div>
+
+      <!-- Value 3 -->
+      <div class="bg-white shadow-md rounded-xl p-6 text-center" data-aos="fade-up" data-aos-delay="300">
+        <div class="w-12 h-12 mx-auto mb-4 bg-brandGreen/10 text-brandGreen flex items-center justify-center rounded-full">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-2.21 0-4 1.79-4 4v6h8v-6c0-2.21-1.79-4-4-4z" />
+          </svg>
+        </div>
+        <h3 class="font-heading text-lg text-brandGreen mb-2">FLEXIBLE PAYMENT
+MODES</h3>
+        <p class="font-body text-sm text-brandBrown/80">Explore our flexible payment
+modes for a convenient
+shopping experience.
+Choose from options like
+cash, credit/debit cards,
+mobile wallets, etc.</p>
+      </div>
+
+      <!-- Value 4 -->
+      <div class="bg-white shadow-md rounded-xl p-6 text-center" data-aos="fade-up" data-aos-delay="400">
+        <div class="w-12 h-12 mx-auto mb-4 bg-brandGreen/10 text-brandGreen flex items-center justify-center rounded-full">
+         
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+        </div>
+        <h3 class="font-heading text-lg text-brandGreen mb-2">ON TIME DELIVERY</h3>
+        <p class="font-body text-sm text-brandBrown/80">We ensure your orders are
+promptly delivered to your
+doorstep, providing you
+with a seamless and
+reliable shopping
+experience.</p>
+      </div>
+
+    </div>
+
+    <!-- General Manager Section -->
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <!-- GM Image -->
+      <div class="md:w-1/3" data-aos="fade-right">
+        <img src="./images/general manager.png" alt="General Manager" class="rounded-2xl shadow-lg w-full object-cover">
+      </div>
+      <!-- GM Message -->
+      <div class="md:w-2/3" data-aos="fade-left">
+        <h3 class="font-heading text-2xl text-brandGreen mb-4">Message from Our General Manager</h3>
+        <p class="font-body text-brandBrown/90 mb-6">
+          “At Bhagwati Wood Industries, we are more than just a wood supplier - 
+          we are partners in growth. Our mission is to empower builders, 
+          craftsmen, and industries with products that stand the test of time.”
+        </p>
+        <p class="font-heading text-brandBrown">-  Mr. Dinesh Chandra Joshi</p>
+      </div>
+    </div>
+
+  </div>
+        </section>
+
+        <!-- COMPANY EXPERTISE -->
+        <section id="expertise" class="bg-brandGreen py-20">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        
+                <!-- Heading -->
+                <div class="text-center mb-12" data-aos="fade-down">
+                    <h2 class="text-3xl md:text-4xl font-heading text-brandBeige mb-4">
+                        Our Expertise
+                    </h2>
+                    <p class="text-brandBeige/90 font-body max-w-2xl mx-auto">
+                        We specialize in manufacturing and supplying high-quality wood raw
+materials, tailored to meet the unique needs of our clients. With
+precision processes and strict quality control, we ensure every piece
+meets the highest standards of strength, durability, and finish.
+                    </p>
+                </div>
+        
+                <!-- Expertise Grid -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+                    <!-- Expertise Card 1 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="w-14 h-14 mx-auto mb-4 bg-brandGreen/10 text-brandGreen flex items-center justify-center rounded-full">
+                             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292" />
+          </svg>
+                        </div>
+                        <h3 class="font-heading text-lg text-brandGreen mb-2">TEAK WOOD</h3>
+                       
+                    </div>
+        
+                    <!-- Expertise Card 2 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="w-14 h-14 mx-auto mb-4 bg-brandGreen/10 text-brandGreen flex items-center justify-center rounded-full">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M9 6l-6 6 6 6" />
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-lg text-brandGreen mb-2">SITE PROJECTS </h3>
+                        
+                    </div>
+        
+                    <!-- Expertise Card 3 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="w-14 h-14 mx-auto mb-4 bg-brandGreen/10 text-brandGreen flex items-center justify-center rounded-full">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M20 13V7a2 2 0 00-2-2H6a2 2 0 00-2 2v6M9 16h6" />
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-lg text-brandGreen mb-2">SOLID DOORS</h3>
+                        
+                    </div>
+        
+                   
+        
+                </div>
+            </div>
+        </section>
+
+        <!-- WE'D LOVE TO HEAR FROM YOU -->
+        <section id="contact-cta" class="bg-brandBeige py-20">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10">
+        
+                <!-- Text -->
+                <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right" data-aos-duration="1200">
+                    <h2 class="text-3xl md:text-4xl font-heading text-brandBrown mb-4">
+                        We’d Love to Hear From You
+                    </h2>
+                    <p class="text-brandBrown/80 font-body mb-6 max-w-md mx-auto md:mx-0">
+                       Thank you for taking the time to learn about Bhagwati Wood
+Industries. We look forward to the opportunity to work with you and
+help your business achieve its goals.
+
+                    </p>
+                    <a href="./form.html"
+                        class="inline-block bg-brandGreen text-brandBeige font-heading px-6 py-3 rounded-lg shadow-md hover:bg-brandBrown transition">
+                        Contact Us
+                    </a>
+                </div>
+        
+                <!-- Image / Illustration -->
+                <div class="md:w-1/2 flex justify-center" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                    <img src="./images/roll-image.jpg" alt="Contact Us" class="w-72 md:w-96 rounded-xl shadow-lg">
+                </div>
+        
+            </div>
+        </section>
+
+        <div class="footer">
+            <footer class="bg-brandGreen text-brandBeige py-10 px-6">
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up">
+        
+                    <!-- Brand / About -->
+                    <div>
+                        <a href="./index.html" class="flex items-center space-x-2">
+                            <img src="./images/logo.png" alt="MyBrand Logo" class="h-20 w-auto rounded-full p-3" />
+                        </a>
+                        <p class="text-sm opacity-80 mt-3">
+                            Crafting timeless experiences with creativity, precision, and heart.
+                        </p>
+                    </div>
+        
+                    <!-- Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2 text-sm opacity-90">
+                            <li><a href="./index.html" class="hover:text-white transition">Home</a></li>
+                            <li><a href="./about.html" class="hover:text-white transition">About</a></li>
+                            <li><a href="./products.html" class="hover:text-white transition">Products</a></li>
+                            <li><a href="./form.html" class="hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Contact / Social -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+        
+                        <!-- Address -->
+                        <p class="text-sm mb-2">🏢 Bhagwati Wood Industries</p>
+                        <p class="text-sm mb-2"><a href="https://share.google/DH5X17gG1FefHQTkX">Plot No. 21, P and T Block, Rajdhani Park, Main Assam Timber Market, Mundka, Delhi-110041</a></p>
+        
+                        <!-- Phone -->
+                        <p class="text-sm mb-2">✆ +91-8745013673, +91-9911108659</p>
+        
+                        <!-- Email -->
+                        <p class="text-sm mb-2">📧 bhagwatiwoodindustries79@gmail.com</p>
+        
+                        
+                    </div>
+                </div>
+        
+                <!-- Divider -->
+                <div class="border-t border-brandBeige/30 mt-8 pt-6 text-center text-sm opacity-80">
+                    © <span id="year"></span> Bhagwati Wood Industries. All rights reserved.
+                </div>
+            </footer>
+        
+            <script>
+                // Auto-update copyright year
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+        </div>        
+        </div>
+        </div>
+
+        <a href="https://wa.me/919911108659" target="_blank"
+            class="fixed bottom-6 right-6 bg-white hover:bg-brandGreen text-white rounded-full shadow-lg w-14 h-14 flex items-center justify-center z-50 animate-pulse-custom transition">
+            <!-- WhatsApp SVG Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                    d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z" />
+            </svg>
+        </a>
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./main.js"></script>
+
+    
+</body>
+</html>
